@@ -1,0 +1,194 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #101a35, #263b5e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: #1c2b49;
+    padding: 45px 40px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #d6a84f;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+h1 {
+    color: #f5c76a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #f5c76a;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #e1e7f0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0 25px;
+}
+
+/* Forms */
+form {
+    width: 100%;
+    max-width: 420px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #d6a84f;
+    border-radius: 10px;
+    background: #101a35;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #b8c3d5;
+}
+
+input:focus {
+    border: 2px solid #f5c76a;
+}
+
+/* Buttons */
+button {
+    padding: 14px 25px;
+    background: linear-gradient(90deg, #f39c35, #e76f35);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 8px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(243,156,53,0.3);
+}
+
+/* Welcome and Start Quiz Buttons */
+#authWelcome button,
+#welcome button {
+    min-width: 150px;
+    padding: 16px 25px;
+    font-size: 18px;
+    margin: 12px;
+}
+
+/* Form Buttons */
+form button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 16px;
+}
+
+/* Back and Login/Signup Navigation */
+#signupLoginBtn,
+#loginSignupBtn,
+#signupBackBtn,
+#loginBackBtn {
+    min-width: 120px;
+}
+
+/* Quiz Options */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+    text-align: left;
+    background: #263b5e;
+    border: 1px solid #d6a84f;
+    color: white;
+}
+
+.option-btn:hover {
+    background: #354d73;
+}
+
+.option-btn.selected {
+    background: #d99a3d;
+    color: #101a35;
+}
+
+/* Next Question */
+#nextBtn {
+    min-width: 180px;
+}
+
+/* Result */
+#score {
+    color: #f5c76a;
+    font-size: 19px;
+    line-height: 2;
+    margin: 25px 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    #authWelcome button,
+    #welcome button {
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    button {
+        font-size: 15px;
+    }
+}

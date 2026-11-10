@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Main Welcome Page -->
+        <div id="authWelcome">
+            <h1>Welcome to Online Quiz System</h1>
+            <p>Test your knowledge with our Generative AI Quiz!</p>
+
+            <button id="goSignupBtn">Sign Up</button>
+            <button id="goLoginBtn">Login</button>
+        </div>
+
+        <!-- Sign Up Page -->
+        <div id="signup" style="display:none;">
+            <h1>Create Account</h1>
+
+            <form id="signupForm">
+                <input type="text" id="signupName"
+                    placeholder="Enter your name" required>
+
+                <input type="email" id="signupEmail"
+                    placeholder="Enter your email" required>
+
+                <input type="password" id="signupPassword"
+                    placeholder="Create password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <p>Already have an account?</p>
+            <button id="signupLoginBtn">Login</button>
+            <button id="signupBackBtn">Back</button>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login" style="display:none;">
+            <h1>Student Login</h1>
+
+            <form id="loginForm">
+                <input type="email" id="loginEmail"
+                    placeholder="Enter your email" required>
+
+                <input type="password" id="loginPassword"
+                    placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <p>Don't have an account?</p>
+            <button id="loginSignupBtn">Sign Up</button>
+            <button id="loginBackBtn">Back</button>
+        </div>
+
+        <!-- Original Welcome Screen / Start Quiz -->
+        <div id="welcome" style="display:none;">
+            <h1>Welcome to Online Quiz System</h1>
+            <p>Test your knowledge with our Generative AI Quiz!</p>
+            <button id="startBtn">Start Quiz</button>
+        </div>
+
+        <!-- Original Quiz Screen -->
+        <div id="quiz" style="display:none;">
+            <h1>Online Quiz System</h1>
+
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="options"></div>
+
+            <button id="nextBtn">Next Question</button>
+        </div>
+
+        <!-- Original Result Screen -->
+        <div id="result" style="display:none;">
+            <h2>Quiz Result</h2>
+
+            <p id="score"></p>
+
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
